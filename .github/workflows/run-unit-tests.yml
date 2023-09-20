@@ -1,5 +1,5 @@
 name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} is trying to run unit tests
 on: [push]
 jobs:
   Run-unit-tests:
@@ -10,6 +10,6 @@ jobs:
         with:
           node-version: '16'
       - run: pwd
-      - run: cd todo_app/src/webapp/api
+      - run: cd src/webapp/api
       - run: npm install
       - run: npm run test
