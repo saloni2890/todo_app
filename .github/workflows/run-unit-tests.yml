@@ -9,6 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
+      - run: pwd
       - run: cd todo_app/src/webapp/api
       - run: npm install
       - run: npm run test
